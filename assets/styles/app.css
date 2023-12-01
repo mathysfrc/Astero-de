@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+body {
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+    font-family: 'Space Grotesk';
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+             1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    place-items: center;
+    border: 2px solid white;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+
+    width: fit-content;
+    margin: auto;
+
+    background-image: url(../images/background2.jpg);
+    background-size: cover;
+
+}
+
+.game div {
+    grid-column: var(--column);
+    grid-row: var(--row);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.score {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+    1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+/* CSS */
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin: auto;
+  display: flex;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.asteroid {
+    background-image: url(../images/asteroide.png)
+}
+
+.spaceship {
+    background-image: url(../images/vaisseau.png)
+}
+
+.explode {
+    background-image: url(../images/explosion.png)
+}
+
